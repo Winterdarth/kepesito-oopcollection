@@ -2,7 +2,7 @@ package hu.nive.ujratervezes.oopcollection.army;
 
 public class Swordsman extends MilitaryUnit{
 
-    int damageNmber=0;
+    int damageNumber = 0;
 
     public Swordsman(boolean isArmed) {
         super(100, 10, isArmed);
@@ -11,9 +11,9 @@ public class Swordsman extends MilitaryUnit{
     @Override
     public void sufferDamage(int damage) {
 
-        if(damageNmber ==0) {
+        if(damageNumber == 0) {
             super.sufferDamage(0);
-            this.damageNmber++;
+            this.damageNumber++;
         }
         else {
             super.sufferDamage(damage);
